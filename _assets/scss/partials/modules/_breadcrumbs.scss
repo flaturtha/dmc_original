@@ -1,0 +1,28 @@
+
+
+.breadcrumbs {
+  // color: lighten($pcolor, 15%);
+  border-bottom: 2px solid $bgcolor;
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  display: inline;
+  li {
+    display: inline;
+    &:not(:last-child):after {
+      content: "\00bb";
+      color: $acolor;
+    }
+    a {
+      color: lighten($pcolor, 15%);
+    }
+  }
+  .active {
+    color: $acolor;
+    border-bottom: none;
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,112 @@
+/*====================================================
+=            ALL HEADER/NAV/BRANDING SCSS            =
+====================================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+
+
+
+
+
+
+
+/* BRANDING */
+.branding {
+
+
+    background-color: $paper;
+    // background-color: $bgcolor;
+    // background-image: url('/assets/img/site/tmp12.svg'), url('/assets/img/site/pulpicons2.svg');
+    // background-repeat: no-repeat, repeat;
+    // background-size: 105%, 100%;
+    // background-position: center top;
+    // border-top: 10px solid $acolor;
+    // border-bottom: 10px solid $acolor;
+    // outline: 5px solid $acolor;
+    // position: relative;
+    // top: 76px; /* -32px */
+    // width: 100.5%;
+    // height: 0;
+    // padding-top: 11.5%;
+
+    .title, .subtitle, .tagline {
+      font-family: 'Oswald', sans-serif;
+      // text-align: center;
+      color: $bgcolor;
+      text-transform: uppercase;
+			letter-spacing: 0.15rem;
+    }
+    .title {
+    	margin: 1rem 0 0 0;
+    }
+    .subtitle {
+			font-size: 1.125rem;
+    }
+    .tagline {
+    	font-size: 1rem;
+    	letter-spacing: 0.15rem;
+    	text-align: center;
+    }
+
+}
+
+
+.active {
+  // border-bottom: 4px solid $acolor;
+}
+
+
+.buttonY {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background-color:#ffffff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:25px 76px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.buttonY:hover {
+  background-color:#f6f6f6;
+}
+.buttonY:active {
+  position:relative;
+  top:1px;
+}
+
+.buttonN {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background-color:#3d3d3d;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:25px 76px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.buttonN:hover {
+  background-color:#f6f6f6;
+}
+.buttonN:active {
+  position:relative;
+  top:1px;
+}

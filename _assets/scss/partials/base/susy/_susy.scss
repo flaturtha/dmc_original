@@ -1,0 +1,58 @@
+/* ==========================================================================
+   SUSY GRID COMPONENTS
+   ========================================================================== */
+@import 'breakpoint';
+@import 'mixins';
+
+$susy: (
+  // output: isolate,
+  output: float,
+  gutter-position: split,
+  global-box-sizing: border-box,
+  // debug: (image: show-columns)
+);
+
+$bp-med: 530px;
+$bp-large: 775px;
+$bp-xlarge: 1600px;
+
+$small: (
+  columns: 8
+  // container: 360px
+  // gutter: 1/4
+);
+
+$med: (
+  columns: 8,
+  gutter: 1/4
+);
+
+$large: (
+  columns: 12,
+  gutter: 1/4
+);
+
+$header-grid: (
+  columns: 7,
+  gutter: 1/4,
+  global-box-sizing: border-box,
+  // debug: (image:show)
+);
+
+@include border-box-sizing;
+@include layout($small);
+
+.wrap {
+  @include container;
+  // @include cf;
+  padding: 0 1rem;
+  @include susy-breakpoint($bp-med, $med) {
+    // padding: 0;
+    max-width: 100%;
+    @include show-grid;
+  }
+  @include susy-breakpoint($bp-large, $large) {
+    max-width: 960px;
+    @include show-grid;
+  }
+}

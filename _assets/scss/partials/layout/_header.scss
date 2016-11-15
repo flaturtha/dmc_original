@@ -1,0 +1,13 @@
+/*=============================================
+=            HEADER                           =
+=============================================*/
+
+.header {
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+  padding: 0 0 1rem 1rem;
+  // margin-bottom: 2rem;
+  background-color: $paper;
+  border-bottom: 2px solid $bgcolor;
+}

@@ -1,0 +1,128 @@
+/* ==========================================================================
+   CARD MODULE
+   ========================================================================== */
+
+$border-radius: 3px;
+
+.cards {
+  // border: 2px solid green;
+  @include cf;
+  line-height: 0;
+  list-style: none;
+  // font-size: 0;
+  p {
+    line-height: 1.5rem;
+    padding: 5px 10px;
+  }
+}
+
+.card {
+  border: 1px double $bordercolor;
+  border-radius: $border-radius;
+  background-color: $paper;
+  opacity: 0.8;
+  // box-shadow: -4px 3px 4px $bordercolor;
+  margin-bottom: gutter() * 5;
+  &:hover {
+    border: 1px solid $acolor;
+    opacity: 1;
+    // box-shadow: -4px 8px 8px transparentize($acolor, .8);
+    .card__meta, .card__genre {
+      color: #fff;
+      font-weight: bold;
+      background: $acolor;
+    }
+    .meta {
+      background-color: $acolor;
+      color: #fff;
+      font-weight: bold;
+    }
+    .readmore {
+      font-weight: bold;
+    }
+  }
+  @include susy-breakpoint($bp-med){
+    @include gallery(4 of 8);
+    margin-bottom: gutter();
+  }
+  @include susy-breakpoint($bp-large){
+    @include gallery(4 of 12);
+    margin-bottom: gutter();
+  }
+}
+
+.card__header {
+  width:100%;
+  height: 385px;
+  padding:0;
+  margin:0;
+  background-position:center;
+  background-repeat:no-repeat;
+  position:relative;
+  overflow:hidden;
+  background-size: cover;
+  border-radius-top: $border-radius *2;
+  // border-radius-top: $border-radius;
+}
+
+h2.card__meta  {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  color:white;
+  background-color: $bgcolor;
+  // background:rgba(0,0,0,0.65);
+  margin:0;
+  padding:6px;
+  border:none;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    display: block;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+}
+
+.card__title {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  font-size: 19.654px;
+}
+
+.card__author {
+  // font-size: 2rem;
+  color: darken(#fff, 5%);
+}
+
+.card__genre {
+  background-color: $bgcolor;
+  // background:rgba(0,0,0,0.65);
+  color:white;
+  text-align:center;
+  font-size:0.95rem;
+  font-weight:800;
+  letter-spacing: 0.15rem;
+}
+
+.TOCexcerpt {
+  background-color: $paper;
+}
+
+.meta {
+  border-top: 2px solid $bgcolor;
+  background-color: $paper;
+  // background: saturate($bgcolor, 5%);
+  color: $pcolor;
+  text-align: center;
+  margin: 0 auto;
+  border-radius-bottom-left: $border-radius;
+}
+
+a.readmore {
+  color: $acolor;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.125rem;
+}

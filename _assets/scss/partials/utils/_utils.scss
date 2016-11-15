@@ -1,0 +1,98 @@
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.hidden {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.xsmall {
+  font-size: 0.75rem;
+}
+
+.xxsmall {
+  font-size: 0.625rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.companyname {
+  text-transform: uppercase;
+  color: $acolor;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+// .small {
+//   font-size: small;
+// }
+
+.cf {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.grit {
+   -webkit-mask-image: url("/assets/img/grit.png");
+   mask-image: url("/assets/img/mytexture6.png");
+   // -webkit-filter: contrast(50%);
+   // opacity: 0.5;
+   // filter: alpha(opacity=50);
+   // -webkit-mask-repeat: repeat-x;
+   // mask-repeat: repeat-x;
+   // -webkit-mask-clip: border;
+   // -webkit-mask-origin: border;
+}
+
+.grit2 {
+  -webkit-mask-image: url("/assets/img/grit2.png");
+  mask-image: url("/assets/img/grit2.png");
+  // opacity: 0.5;
+  // filter: alpha(opacity=50);
+}
+
+.grit3 {
+   -webkit-mask-image: url("/assets/img/mytexture6.png");
+   mask-image: url("/assets/img/mytexture6.png");
+   // -webkit-filter: contrast(50%);
+   opacity: 0.5;
+   filter: alpha(opacity=50);
+   // -webkit-mask-repeat: repeat-x;
+   // mask-repeat: repeat-x;
+   // -webkit-mask-clip: border;
+   // -webkit-mask-origin: border;
+}
+
+
+.padding1r {
+  padding: 1rem;
+}
+
+.margin1r {
+  margin: 1rem;
+}
+

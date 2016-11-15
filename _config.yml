@@ -1,0 +1,47 @@
+# Site settings
+title: Dollar Mystery Club
+subtitle: $1 a month delivers murder to your door!
+email: contact@talesofmurder.com
+description: A monthly subscription service delivering a new mystery novel each month.
+baseurl: "localhost:3000" # the subpath of your site, e.g. /blog/
+url: "https://www.dollarmysteryclub.com" # the base hostname & protocol for your site ... change to "/NOS" for gh-pages
+twitter_username: 
+github_username: flaturtha
+locale: en_US
+
+# Read Time is a calculator to provide post Estimated Reading Time (ERT) based on word count. Usage is recommended.
+readtime: true
+wpm: 200
+
+# collections:
+
+
+
+# paginate: 12
+# paginate_path: "/short-stories/page/:num"
+
+# Site Owner
+# owner:
+#   name: Rich Cook
+#   avatar:
+#   email: rich@talesofmurder.com
+#   google:
+#     plus: talesofmurderpress
+#     analytics: UA-42672955-1
+#     verify:
+
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+include: ["_pages"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gulpfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "bower.json"]
+# gems: [jekyll-assets, autoprefixer-rails]
